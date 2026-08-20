@@ -1,0 +1,29 @@
+name: MarriageGender
+version: 1.0.0
+main: com.example.marriagegender.MarriageGenderPlugin
+api-version: '1.21'
+description: Genders, sex and marriage plugin with Vault economy.
+depend: [Vault]
+softdepend: [Essentials, EssentialsX]
+
+commands:
+  gender:
+    description: Gender management.
+    usage: /gender
+  sex:
+    description: Sex requests.
+    usage: /sex
+  marry:
+    description: Marriage requests.
+    usage: /marry
+  divorce:
+    description: Divorce command.
+    usage: /divorce
+
+permissions:
+  plugin.admin:
+    description: Allows /gender setadmin.
+    default: op
+  plugin.use:
+    description: Allows basic plugin commands.
+    default: true
